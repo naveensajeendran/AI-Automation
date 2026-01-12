@@ -1,0 +1,89 @@
+/* Global reset */
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #121212; /* Dark background */
+  color: #e5e5e5; /* Light gray text */
+}
+
+/* Header */
+h1 {
+  text-align: center;
+  margin: 30px 0;
+  color: #e5e5e5;
+  font-size: 2.5rem;
+}
+
+/* Navigation bar */
+nav {
+  background: #000000; /* Solid black */
+  padding: 12px 20px;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  border-bottom: 2px solid #e5e5e5; /* Red accent underline */
+}
+
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #e5e5e5; /* Red hover effect */
+}
+
+/* Form container */
+form {
+  max-width: 600px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #1c1c1c; /* Dark card style */
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+}
+
+/* Labels and inputs */
+label {
+  display: block;
+  font-weight: 600;
+  margin-top: 15px;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  background: #2a2a2a; /* Dark input field */
+  color: #ffffff;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid #e5e5e5; /* Red focus border */
+}
+
+/* Button styling */
+button {
+  background: #e5e5e5; /* Red button */
+  color: #2a2a2a;
+  font-weight: bold;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background: #e00000; /* Darker red on hover */
+  transform: scale(1.05); /* Slight zoom on hover */
+}
