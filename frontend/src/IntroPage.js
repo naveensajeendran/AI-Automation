@@ -1,6 +1,7 @@
 import React from 'react';
 import './IntroPage.css';
-import logo from '../public/gemra-logo.png'; // Save the logo as gemra-logo.png in public folder
+
+const logo = process.env.PUBLIC_URL + '/gemra-logo.png';
 
 const IntroPage = () => {
   return (
