@@ -1,10 +1,12 @@
 import React from "react";
 import ClientForm from "./ClientForm";
+import IntroPage from "./IntroPage";
 import "./App.css";
 
 function App() {
     return (
         <>
+            <IntroPage />
             <header>
                 <h1>Gemra Ventures</h1>
                 <nav>
