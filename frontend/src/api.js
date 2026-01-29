@@ -19,8 +19,8 @@ export const submitClientIntake = async (clientData) => {
       throw new Error(error.message);
     }
 
-    // Use 'data' in the return for lint compliance
-    return { message: `Client ${clientData.name} onboarded successfully!`, data };
+    // Return only 'data' to avoid unused variable
+    return data;
   } catch (error) {
     console.error("Intake error:", error);
     throw error;
