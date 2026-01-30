@@ -10,7 +10,7 @@ export const submitClientIntake = async (clientData) => {
   try {
     console.log("Submitting to Supabase directly");
     
-    const { error } = await supabase
+    const { data, error } = await supabase
       .from('clients')
       .insert([clientData])
       .select();
@@ -19,7 +19,6 @@ export const submitClientIntake = async (clientData) => {
       throw new Error(error.message);
     }
 
-    // Return only 'data' to avoid unused variable
     return data;
   } catch (error) {
     console.error("Intake error:", error);
