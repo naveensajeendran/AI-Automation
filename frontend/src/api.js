@@ -10,7 +10,7 @@ export const submitClientIntake = async (clientData) => {
   try {
     console.log("Submitting to Supabase directly");
     
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('clients')
       .insert([clientData])
       .select();
@@ -19,7 +19,7 @@ export const submitClientIntake = async (clientData) => {
       throw new Error(error.message);
     }
 
-    return data;
+    return { message: `Client ${clientData.name} onboarded successfully!` };
   } catch (error) {
     console.error("Intake error:", error);
     throw error;
