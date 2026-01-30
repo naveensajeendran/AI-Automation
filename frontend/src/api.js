@@ -10,7 +10,7 @@ export const submitClientIntake = async (clientData) => {
   try {
     console.log("Submitting to Supabase directly");
     
-    const { data, error } = await supabase
+    const { error } = await supabase
       .from('clients')
       .insert([clientData])
       .select();
